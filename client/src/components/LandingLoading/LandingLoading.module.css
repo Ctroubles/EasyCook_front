@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@800&display=swap');
+
+#Main{
+    background-color: #130218;
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Exo 2', sans-serif;  }
+
+#Main > div{
+    position: relative;
+    margin: 10px;
+    z-index: 1000;
+}
+
+#Main div > h1 {
+    font-size: 3em;
+    margin: 0;
+    position: relative;
+    z-index: 1000 !important;
+    padding: 20px;
+    background-color: #141414;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+
+#Main div::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+    z-index: -1;
+    animation-name: yellow-shadow;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+
+}
+
+#Main div::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+    z-index: -1;
+    animation-name: cyan-shadow;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+
+}
+
+@media screen  and (max-width: 500px) {
+  #Main div > h1 {
+    font-size: 8.5vw;
+  }
+}
+
+
+  
+  @keyframes yellow-shadow {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    25% {
+      top: 50%;
+      left: 0;
+    }
+    50% {
+      top: 50%;
+      left: 50%;
+    }
+    75% {
+      top: 0;
+      left: 50%;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  
+
+  
+  @keyframes cyan-shadow {
+    0% {
+      right: 0;
+      bottom: 0;
+    }
+    25% {
+      right: 0;
+      bottom: 50%;
+    }
+    50% {
+      right: 50%;
+      bottom: 50%;
+    }
+    75% {
+      right: 50%;
+      bottom: 0;
+    }
+    100% {
+      right: 0;
+      bottom: 0;
+    }
+  }
+  
+

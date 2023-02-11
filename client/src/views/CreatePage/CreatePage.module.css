@@ -1,0 +1,160 @@
+#loadingContainer{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#divForm{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    background-color: #d9d9d9b0;
+}
+
+#backArrow{
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    /* padding: -40px; */
+}
+
+#backArrow img{
+    height: 100%;
+}
+
+
+
+
+
+
+/* RESPONSIVE DESING */
+
+@media screen and (max-width: 650px) and (min-width: 6px) {
+    #divForm{
+        align-items: start;
+        overflow: auto;
+        background-color: green;
+    }
+    #backArrow{
+        height: 55px;
+        margin: 0;
+        top: 1vh;
+        left: 1vw;
+    }
+}
+
+
+
+@media screen and (max-width: 660px) and (min-width: 651px) {
+    #divForm{
+        align-items: start;
+        padding-top: 2.5vh;
+        overflow: auto;
+        background-color: skyblue;
+    }
+    #backArrow{
+        height: 55px;
+        margin: 0;
+        top: 4%;
+        left: 2vw;
+    }
+}
+
+@media screen and (max-width: 720px) and (min-width: 661px) {
+    #divForm{
+        align-items: start;
+        padding-top: 2.5vh;
+        overflow: auto;
+        background-color: brown;
+    }
+    #backArrow{
+        height: 55px;
+        margin: 0;
+        top: 4%;
+        left: 5vw;
+    }
+}
+
+
+@media screen and (max-width: 760px) and (min-width: 721px) {
+    #divForm{
+        align-items: start;
+        padding-top: 2.5vh;
+        overflow: auto;
+        background-color: green;
+    }
+    #backArrow{
+        height: 55px;
+        margin: 0;
+        top: 4%;
+        left: 8vw;
+    }
+}
+
+
+
+@media screen and (max-width: 790px) and (min-width: 761px) {
+    #divForm{
+        align-items: start;
+        padding-top: 2.5vh;
+        overflow: auto;
+        background-color: blue;
+    }
+
+    #backArrow{
+        height: 55px;
+        margin: 0;
+        top: 5%;
+        left: 10vw;
+    }
+}
+
+
+@media screen and (max-width: 830px) and (min-width: 791px) {
+    #divForm{
+        align-items: start;
+        padding-top: 2.5vh;
+        overflow: auto;
+        background-color: orange;
+    }
+
+    #backArrow{
+        height: 55px;
+        margin: 11px;
+    }
+}
+
+
+@media screen and (max-width: 950px) and (min-width: 831px) {
+    #divForm{
+        align-items: start;
+        padding-top: 2.5vh;
+        overflow: auto;
+        background-color: red;
+    }
+    
+    #backArrow{
+        height: 70px;
+        margin: 15px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 951px) {
+    #divForm{
+        align-items: start;
+        padding-top: 2.5vh;
+        overflow: auto;
+    }
+}
+
+

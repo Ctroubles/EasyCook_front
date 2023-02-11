@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200&family=Roboto+Condensed:ital,wght@1,700&display=swap');
+
+
+#Main{
+    width: 100%;
+    background-color: #f3f3f3;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+}
+#Main h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+#Main h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+#Main p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.back {
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+    width: 75px;
+}
+
+.back img{
+    width: 75px;
+}
+
+
+#MainDetails{
+    padding: 3vh 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 95vh 
+}
+
+
+
+
+
+
+
+#healthScoreContainer{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 16px 0;
+}
+
+#MainDetails > h1{
+    font-size: 45px;
+    line-height: 1;
+    text-align: center;
+}
+
+#strong{
+    position: absolute;
+    right:45%;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+
+#img{
+    border-radius: 25px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+
+#summary a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#MainDetails > div{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#MainDetails section > div {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10% 0;
+}
+
+
+#sectionTop{
+    width: 100%;
+}
+
+#sectionTop div{
+    min-width: 300px;
+    min-height: 300px;
+
+}
+
+
+#sectionTop section{
+    width: 40%;
+    margin-left: 5vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sectionTop section > h2{
+    margin-bottom: 1vh;
+}
+
+
+#sectionBot{
+    display: flex;
+    margin: 3vh 0;
+    width: 100%;
+}
+
+#sectionBot  aside{
+    margin: 20px 0;
+    width: 60%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sectionBot aside > h2 {
+    margin-bottom: 2vh;
+}
+
+#sectionBot section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 1vh 0 0 5vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#sectionBot section div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#sectionBot section div h2{
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+#sectionBot section div ul{
+    padding-left: 3vw;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+#sectionBot section div ul li{
+    list-style: none;
+    margin: 2px;
+}
+
+
+.containerLi{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+}
+
+.arrowIcon{
+    width: 15px;
+}
+
+
+
+/* DARK MODE */
+.dark p{
+    font-weight: 100 !important;
+}
+
+.dark a{
+    color: #f3f3f3 !important;
+}
+
+
+@media screen and (max-width: 500px) {
+    #MainDetails > h1{
+        font-size: 2em;
+    }
+
+    .back {
+        left: 2vw;
+        top: 1vh;
+        width: 60px;
+    }
+    .back img{
+        width: 60px;
+    }
+
+    #MainDetails{
+        margin-top: 50px;
+        max-width: 80%;
+    }
+
+    #MainDetails > div{
+        flex-direction: column;
+    }
+
+    #sectionTop div{
+        min-width: 80%;
+        min-height: auto;
+    }
+   
+
+    #sectionTop section{
+        margin-top: 5vh;
+        width: 100%;
+    }
+
+    #MainDetails #sectionBot{
+        flex-direction: column-reverse ;
+    }
+
+    #sectionBot  aside{
+        width: 100%;
+    }
+
+    #sectionBot section{
+        width: 100%;
+        flex-direction: row;
+        margin: 5vh 0;
+        flex-direction: column;
+    }
+
+    #sectionBot section div{
+        justify-content: start;
+    }
+    
+}
+
+
+@media screen and (max-width: 750px) and (min-width: 501px){
+
+    #MainDetails > h1{
+        font-size: 2em;
+    }
+
+    .back {
+        left: 2vw;
+        top: 1vh;
+        width: 60px;
+    }
+    .back img{
+        width: 60px;
+    }
+
+    #MainDetails{
+        margin-top: 50px;
+        max-width: 80%;
+    }
+
+    #MainDetails > div{
+        flex-direction: column;
+    }
+
+    
+    #sectionTop section{
+        margin-top: 5vh;
+        width: 100%;
+    }
+
+    #MainDetails #sectionBot{
+        flex-direction: column-reverse ;
+    }
+
+    #sectionBot  aside{
+        width: 100%;
+    }
+
+    #sectionBot section{
+        width: 100%;
+        flex-direction: row;
+        margin: 5vh 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 751px) {
+    .back {
+        left: 2vw;
+        top: 9vh;
+    }
+
+    #MainDetails{
+        max-width: 80%;
+    }
+
+    #MainDetails > div{
+        flex-direction: column;
+    }
+
+    #sectionTop section{
+        margin-top: 5vh;
+        width: 100%;
+    }
+
+    #MainDetails #sectionBot{
+        flex-direction: column-reverse ;
+    }
+
+    #sectionBot  aside{
+        width: 100%;
+    }
+
+    #sectionBot section{
+        width: 100%;
+        flex-direction: row;
+        margin: 5vh 0;
+    }
+}
+
+
+@media screen and (max-width: 1500px) and (min-width: 1401px) {
+    .back {
+        left: 1vw;
+    }
+}
+
+
+@media screen and (max-width: 1400px) and (min-width: 1201px) {
+    .back {
+        left: 2vw;
+        top: 8vh;
+    }
+
+    #MainDetails{
+        max-width: 1000px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
