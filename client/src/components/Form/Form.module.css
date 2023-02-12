@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,200;1,300;1,400;1,500&display=swap');
+
+
 #formContainer form{
     background-color: #1a0321e6;
     display: flex;
@@ -9,6 +12,8 @@
     border-radius: 30px;
     box-shadow: 0 0 10px #1a0321e6, 0 0 30px #1a0321e6;
     min-height: 95vh;
+    font-family: 'Exo 2', sans-serif;
+
 }
 
 #formContainer form > section {
@@ -143,9 +148,10 @@
 
 /* RESPONSIVE DESING */
 
-@media screen and (max-width: 500px) and (min-width: 101px) {
+@media screen and (max-width: 500px) {
     #formContainer form h1{
         text-align: center;
+        margin-top: 55px;
     }
     #formContainer {
         width: 100%;
@@ -155,6 +161,8 @@
         width: 100%;
         min-height: 100vh;
         border-radius: 0;
+        padding: 15px 30px;
+
     }
 
     #dietsOptions{
@@ -174,7 +182,10 @@
     #formContainer form >section> div>label{
         margin: 15px 0;
         width: 100vw;
-        display: block;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 5px;
         flex: 1
     }
 
