@@ -4,6 +4,9 @@ import { Route, useLocation } from 'react-router-dom';
 import Loading from './components/Loading/Loading';
 import { useDispatch } from 'react-redux';
 import { setWidthDevice } from './redux/actions/actions';
+import axios from 'axios';
+
+axios.defaults.baseURL = 'https://easy-cook-production.up.railway.app/'
 
 
 function App() {

@@ -2,7 +2,8 @@ import axios from 'axios';
 import {CHANGE_ORDER, DARK_MODE, GET_ALL_RECIPES, GET_DIETS, GET_RECIPE_DETAILS, LOADING_CARDS_CONTAINER, PAGINADO, RECIPES_BY_DIET, SET_WIDTH_DEVICE, STATE_OF_SEARCH_BAR} from './actions-types.js';
 
 
-const url = "http://localhost";
+/// las url van asi, proque le definí una baseUrl en App
+
 
 export const setWidthDevice=(width)=>{
     return {type: SET_WIDTH_DEVICE, payload:width}
@@ -13,7 +14,7 @@ export const setWidthDevice=(width)=>{
 export const getAllRecipes = (name) =>{
 
     return async (dispatch)=>{
-        const {data} = name? await axios.get(`${url}:3001/recipes?name=${name}`) : await axios.get(`${url}:3001/recipes/`)
+        const {data} = name? await axios.get(`/recipes?name=${name}`) : await axios.get(`/recipes/`)
         dispatch({type: GET_ALL_RECIPES, payload:data})
     } 
 }
@@ -21,7 +22,7 @@ export const getAllRecipes = (name) =>{
 
 export const getDiets = ()=>{
     return async (dispatch)=>{
-        const {data} = await axios.get(`${url}:3001/diets`);
+        const {data} = await axios.get(`/diets`);
         dispatch({type: GET_DIETS, payload: data});
     }
 };
@@ -47,7 +48,7 @@ export const changeOrder = (orderType) => {
 
 export const getRecipeDetail = (id) =>{
     return async (dispatch)=>{
-        const {data} = await axios.get(`${url}:3001/recipes/${id}`)
+        const {data} = await axios.get(`/recipes/${id}`)
         dispatch({type: GET_RECIPE_DETAILS, payload:data})
         
     }
