@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import SearchBar from "../SearchBar/SearchBar";
-import style from "./navBar.module.css";
+import style from "./NavBar.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import moonIcon from '../../assets/Dark_mode_assets/moon-6695.svg'
 import sunIcon from '../../assets/Dark_mode_assets/sun-1846.svg'
