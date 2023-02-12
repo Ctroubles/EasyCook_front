@@ -59,7 +59,7 @@ const Form = ()=>{
 
         const realSend = {...recipeToSend, dietTypes:[...dietsPicks]}
 
-        await axios.post('http://localhost:3001/recipes/',realSend)
+        await axios.post('/recipes/',realSend)
          .then(respuesta=> {
             setRecipeToSend({
                 name:'',
