@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+#paginadoSection{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    margin-top: 1vh;
+    width: 100%;
+    background-color: #141414;
+
+
+}
+
+
+#paginadoSection ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 0 30px;
+}
+
+
+
+#paginadoSection ul input{
+    padding: 6px 10px;
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(224, 224, 224);
+    border: none;
+    font-size: 20px;
+    transition: all 0.5s;
+    font-weight: 400;
+    font-family: 'Itim', cursive;
+}
+
+.indicesON{
+    color: #141414 !important;
+    background-color: antiquewhite !important; 
+}
+
+
+
+.arrows{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border: none;
+}
+
+.arrows img{
+    height: 40px;
+    background-color: #141414;
+}
+
+.arrows img:active{
+    transform: scale(1.2);
+}
+
+.disableArrows:active{
+    transform: none !important;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    #paginadoSection ul input{
+        font-size: 18px;
+        padding: 5px 7px;
+        margin: 0 7px;
+    }
+    #paginadoSection ul {   
+        margin: 0 20px;
+    }
+}

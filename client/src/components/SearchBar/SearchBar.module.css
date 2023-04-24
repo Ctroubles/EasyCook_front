@@ -1,0 +1,96 @@
+#SearchBarContainer{
+    position: relative;
+    width: 500px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    transition: all 2s;
+}
+
+.divSearchBar{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+}
+
+.divSearchBar input{
+    background: transparent;
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 10px 0 10px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+.divSearchBar input::placeholder{
+    color: rgba(202, 199, 255, 0.5);
+    font-size: 18px;
+}
+
+
+#button{
+    position: absolute;
+    right: 0;
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: rgb(202, 199, 255, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button:active{
+    background-color: rgb(163, 111, 163);
+}
+
+
+#button img{
+    width: 60%;
+}
+
+
+
+
+
+/* RSPONSIVE DESIGN */
+
+
+@media screen and (max-width : 400px){
+    #SearchBarContainer {
+        width: 100%;
+    }
+
+
+
+ 
+}
+
+ @media screen and (max-width : 1024px ) and (min-width :400px) {
+    #SearchBarContainer{
+        width: 450px;
+        /* background-color: yellow; */
+
+    }
+
+    .divSearchBar input{
+        font-size: 0.95rem;
+
+    }
+
+    .divSearchBar input::placeholder{
+        font-size: 0.95em;
+    }
+
+    .formSearchBar {
+        height: 35px;
+    }
+}; 
+ 
+
+
