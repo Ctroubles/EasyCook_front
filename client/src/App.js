@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { setWidthDevice } from './redux/actions/actions';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://easy-cook-production.up.railway.app/'
+axios.defaults.baseURL = 'https://easy-cook-back.vercel.app/'
 
 
 function App() {
