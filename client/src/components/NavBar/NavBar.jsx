@@ -33,7 +33,7 @@ const NavBar =()=>{
   
 
     
-
+console.log(width);
 
 
     if (width > 500) {
@@ -47,10 +47,8 @@ const NavBar =()=>{
                 <Link to={'/create'} className={style.create}><span>CREATE</span></Link>
             </header>
         )
-    }
-
-    
-    if (width <= 500){
+    }    
+    else{
         return(
             <header id={style.header}  >
                 <div onClick={()=>setMenuStatus(!menuStatus)} id={style.menuIcon}><img src={menuIcon} alt="menu-icon" /></div>
