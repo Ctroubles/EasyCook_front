@@ -10,8 +10,6 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
-  /* aca arriba está el código que deberái estar en *{} */
-
     width: 100%;
     background-color: #1a0321;
     display: flex;
@@ -203,7 +201,7 @@
   }
 /* 
   .hideNavbar{
-    top: -10vh !important;       //// POR SI QUIERO OCULTAR AL SCROLEAR HACIA ABAJO
+    top: -10vh !important;       //// POR SI QUIERO OCULTAR EL HEADER AL SCROLEAR HACIA ABAJO
   } */
 
 }

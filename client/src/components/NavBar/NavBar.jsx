@@ -8,11 +8,15 @@ import { darkModeControl } from "../../redux/actions/actions";
 import menuIcon from "../../assets/menu-icon.svg";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useMediaQuery } from '@material-ui/core';
+
+
+
+
 
 const NavBar =()=>{
 
-
-    const width= useSelector(e=>e.widthDevice)
+    const widthMobile = useMediaQuery('(max-width: 500px)');
 
     const [menuStatus, setMenuStatus] = useState(false)
 
@@ -30,13 +34,10 @@ const NavBar =()=>{
     },[])
 
 
-  
-
-    
-console.log(width);
 
 
-    if (width > 500) {
+
+    if (!widthMobile) {
         return(
             <header id={style.header}>
                 <Link className={style.back} to="/">BACK</Link>
