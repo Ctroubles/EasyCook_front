@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import SearchBar from "../SearchBar/SearchBar";
-import styles from "./NavBar.module.css";
+import styles from "./Style.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import moonIcon from '../../assets/Dark_mode_assets/moon-6695.svg'
 import sunIcon from '../../assets/Dark_mode_assets/sun-1846.svg'
@@ -37,6 +37,8 @@ const NavBar =()=>{
 
 
 console.log(styles);
+
+
     if (!widthMobile) {
         return(
             <header id={styles.header}>
