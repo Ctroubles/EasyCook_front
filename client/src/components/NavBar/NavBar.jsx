@@ -37,7 +37,7 @@ const NavBar =()=>{
 
 
 
-    if (!widthMobile) {
+    // if (!widthMobile) {
         return(
             <header id={style.header}>
                 <Link className={style.back} to="/">BACK</Link>
@@ -48,8 +48,8 @@ const NavBar =()=>{
                 <Link to={'/create'} className={style.create}><span>CREATE</span></Link>
             </header>
         )
-    }    
-    else{
+    // }    
+    // else{
         return(
             <header id={style.header}  >
                 <div onClick={()=>setMenuStatus(!menuStatus)} id={style.menuIcon}><img src={menuIcon} alt="menu-icon" /></div>
@@ -64,7 +64,7 @@ const NavBar =()=>{
         )
     }
    
-};
+// };
 
 
 export default NavBar;
