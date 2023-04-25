@@ -41,19 +41,19 @@ console.log(styles);
 
     if (!widthMobile) {
         return(
-            <header id={styles.header}>
+            <div id={styles.header}>
                 <Link className={styles.back} to="/">BACK</Link>
                 <button onClick={()=>dispatch(darkModeControl())} id={styles.moon}><img src={darkMode ? sunIcon : moonIcon} alt="" /></button>
                     <div id={styles.searchBar}>
                         <SearchBar></SearchBar>
                     </div>
                 <Link to={'/create'} className={styles.create}><span>CREATE</span></Link>
-            </header>
+            </div>
         )
     }    
     else{
         return(
-            <header id={styles.header}  >
+            <div id={styles.header}  >
                 <div onClick={()=>setMenuStatus(!menuStatus)} id={styles.menuIcon}><img src={menuIcon} alt="menu-icon" /></div>
                 <div id={styles.searchBar}>
                     <SearchBar></SearchBar>
@@ -62,7 +62,7 @@ console.log(styles);
                     <button onClick={()=>dispatch(darkModeControl())} id={styles.moon}><img src={darkMode ? sunIcon : moonIcon} alt="" /></button>
                     <Link to={'/create'} className={styles.create}><span>CREATE</span></Link>
                 </div>
-            </header>
+            </div>
         )
     }
    
