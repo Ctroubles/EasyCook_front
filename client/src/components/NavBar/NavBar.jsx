@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import SearchBar from "../SearchBar/SearchBar";
-import style from "./NavBar.module.css";
+import styles from "./NavBar.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import moonIcon from '../../assets/Dark_mode_assets/moon-6695.svg'
 import sunIcon from '../../assets/Dark_mode_assets/sun-1846.svg'
@@ -36,35 +36,35 @@ const NavBar =()=>{
 
 
 
-
-    // if (!widthMobile) {
+console.log(styles);
+    if (!widthMobile) {
         return(
-            <header id={style.header}>
-                <Link className={style.back} to="/">BACK</Link>
-                <button onClick={()=>dispatch(darkModeControl())} id={style.moon}><img src={darkMode ? sunIcon : moonIcon} alt="" /></button>
-                    <div id={style.searchBar}>
+            <header id={styles.header}>
+                <Link className={styles.back} to="/">BACK</Link>
+                <button onClick={()=>dispatch(darkModeControl())} id={styles.moon}><img src={darkMode ? sunIcon : moonIcon} alt="" /></button>
+                    <div id={styles.searchBar}>
                         <SearchBar></SearchBar>
                     </div>
-                <Link to={'/create'} className={style.create}><span>CREATE</span></Link>
+                <Link to={'/create'} className={styles.create}><span>CREATE</span></Link>
             </header>
         )
-    // }    
-    // else{
+    }    
+    else{
         return(
-            <header id={style.header}  >
-                <div onClick={()=>setMenuStatus(!menuStatus)} id={style.menuIcon}><img src={menuIcon} alt="menu-icon" /></div>
-                <div id={style.searchBar}>
+            <header id={styles.header}  >
+                <div onClick={()=>setMenuStatus(!menuStatus)} id={styles.menuIcon}><img src={menuIcon} alt="menu-icon" /></div>
+                <div id={styles.searchBar}>
                     <SearchBar></SearchBar>
                 </div>
-                <div id={style.menuContaier} className={menuStatus ? style.menuStatus : undefined}>
-                    <button onClick={()=>dispatch(darkModeControl())} id={style.moon}><img src={darkMode ? sunIcon : moonIcon} alt="" /></button>
-                    <Link to={'/create'} className={style.create}><span>CREATE</span></Link>
+                <div id={styles.menuContaier} className={menuStatus ? styles.menuStatus : undefined}>
+                    <button onClick={()=>dispatch(darkModeControl())} id={styles.moon}><img src={darkMode ? sunIcon : moonIcon} alt="" /></button>
+                    <Link to={'/create'} className={styles.create}><span>CREATE</span></Link>
                 </div>
             </header>
         )
     }
    
-// };
+};
 
 
 export default NavBar;
