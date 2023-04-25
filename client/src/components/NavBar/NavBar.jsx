@@ -36,8 +36,6 @@ const NavBar =()=>{
 
 
 
-console.log(styles);
-
 
     if (!widthMobile) {
         return(

@@ -51,8 +51,6 @@ const DetailsPage = (props) =>{
     }
 
 
-    console.log(darkMode);
-
 
 
     if (loading) {
@@ -98,7 +96,7 @@ const DetailsPage = (props) =>{
                                  <h2>Diets types</h2>
     
                                 <ul >
-                                     {Diet.dietTypes && Diet.dietTypes.map(e=> <div className={style.containerLi}> <img className={style.arrowIcon} src={darkMode?whiteArrowIcon:blackArrowIcon} alt="" /> <li>{e.name}</li> </div>)}
+                                     {Diet.dietTypes && Diet.dietTypes.map(e=> <div className={style.containerLi}> <img className={style.arrowIcon} src={darkMode?whiteArrowIcon:blackArrowIcon} alt="" /> <li>{e}</li> </div>)}
                                 </ul>
                             </div>}
                            
